@@ -1,0 +1,50 @@
+[
+  {
+    "id": "lookup01",
+    "topic": "Lookup Functions",
+    "difficulty": "Easy",
+    "problem_description": "You are given a small table with Product IDs in column A and their corresponding Prices in column B. Given a specific Product ID in cell E2, write a formula in F2 to find its price.",
+    "example_data": "Data Range: A1:B5. Example: A2='P101', B2='$50'. E2='P101'.",
+    "correct_formula": "=VLOOKUP(E2, A1:B5, 2, FALSE)"
+  },
+  {
+    "id": "aggregation01",
+    "topic": "Conditional Aggregation",
+    "difficulty": "Medium",
+    "problem_description": "You have a list of sales transactions. Column C contains the sales region ('North', 'South', 'East', 'West') and Column D contains the sale amount. Write a formula to calculate the total sales for the 'North' region only.",
+    "example_data": "Data Range: C1:D100.",
+    "correct_formula": "=SUMIF(C:C, \"North\", D:D)"
+  },
+  {
+    "id": "advanced_lookup01",
+    "topic": "Advanced Lookups",
+    "difficulty": "Hard",
+    "problem_description": "You have a table where column A has Employee IDs, row 1 (from B1 to F1) has month names ('Jan', 'Feb', 'Mar', ...), and the data in B2:F10 shows monthly sales for each employee. Given an Employee ID in H2 and a Month in I2, write a formula to find their specific sales figure.",
+    "example_data": "Data Range: A1:F10. H2='EMP003', I2='Mar'.",
+    "correct_formula": "=INDEX(B2:F10, MATCH(H2, A2:A10, 0), MATCH(I2, B1:F1, 0))"
+  },
+  {
+    "id": "text01",
+    "topic": "Data Cleaning",
+    "difficulty": "Easy",
+    "problem_description": "A column of customer names (Column A) has inconsistent spacing, like '  John  Smith  '. Write a formula in column B to clean the names by removing extra spaces from the beginning, end, and middle.",
+    "example_data": "A2 = '  John  Smith  '",
+    "correct_formula": "=TRIM(A2)"
+  },
+  {
+    "id": "logical01",
+    "topic": "Logical Functions",
+    "difficulty": "Medium",
+    "problem_description": "In a sales report, column F has the 'Order Amount'. Write a formula in column G to label each order as 'Large' if the amount is greater than $500, and 'Small' otherwise.",
+    "example_data": "F2 = 650",
+    "correct_formula": "=IF(F2>500, \"Large\", \"Small\")"
+  },
+  {
+    "id": "pivot_concept01",
+    "topic": "Pivot Tables",
+    "difficulty": "Medium",
+    "problem_description": "You have a large dataset of sales data with columns for 'Region', 'Product Category', and 'Sales Amount'. You need to create a summary report that shows the total sales for each product category, broken down by each region. Which Excel feature is best suited for this task?",
+    "example_data": "N/A",
+    "correct_formula": "Pivot Table"
+  }
+]
