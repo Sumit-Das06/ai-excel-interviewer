@@ -52,7 +52,7 @@ Setup:
 
 Clone the repository:
 
-git clone [Your GitHub Repo URL]
+git clone https://github.com/Sumit-Das06/ai-excel-interviewer
 cd excel_interviewer_project
 
 Install dependencies:
